@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iWillBanU's Positivity Generator</title>
+    <meta name="description" content="Open for a positive message!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(
+                    90deg,
+                    rgba(255, 0, 0, 1) 0%,
+                    rgba(255, 154, 0, 1) 10%,
+                    rgba(208, 222, 33, 1) 20%,
+                    rgba(79, 220, 74, 1) 30%,
+                    rgba(63, 218, 216, 1) 40%,
+                    rgba(47, 201, 226, 1) 50%,
+                    rgba(28, 127, 238, 1) 60%,
+                    rgba(95, 21, 242, 1) 70%,
+                    rgba(186, 12, 248, 1) 80%,
+                    rgba(251, 7, 217, 1) 90%,
+                    rgba(255, 0, 0, 1) 100%
+            );
+        }
+
+        h1 {
+            font-family: sans-serif;
+            color: white;
+            font-size: 5em;
+            text-align: center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75%;
+            margin: 0;
+            padding: 0;
+            -webkit-text-stroke: 2px black;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        const P = [
+            "You are valid!",
+            "You are awesome!",
+            "Be yourself!",
+            "Smile!",
+            "You got this!",
+            "Believe in yourself!",
+            "You are loved!",
+            "You are cool!",
+            "You make cool things!",
+            "You are very skillful!",
+            "😄",
+            "❤️",
+            "We are here for you!",
+            "Love yourself!",
+            "🐢",
+            "You are a good maroo!",
+            "Have an phenomenal day!"
+        ];
+
+        document.querySelector("h1").innerText = P[Math.floor(Math.random() * P.length)];
+    </script>
+</body>
+</html>
